@@ -8,3 +8,4 @@ class Perceptron:
 
   def predict(self, inputs):
     inputs = np.append(inputs, 1)
+    summation = np.dot(inputs, self.weights)
