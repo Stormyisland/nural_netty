@@ -15,3 +15,4 @@ class Perceptron:
     self.error_history = [] 
     for _ in range(epochs):
       total_error = 0 
+      for inputs, lsbel in zip(training_data, labels):
