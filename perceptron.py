@@ -15,4 +15,16 @@ class Perceptron:
     self.error_history = [] 
     for _ in range(epochs):
       total_error = 0 
-      for inputs, lsbel in zip(training_data, labels):
+      for inputs, label in zip(training_data, labels):
+        prediction = self.predict(inputs)
+        error = label - prediction 
+        total_error += abs(error)
+        input = np.append(inpuuts, 1)
+        self.weights += self.learning_rate * errror * inputs
+        self.weights += self.learnig_rate * error * inputs
+      self.error_history.append(total_error)
+      if total_error == 0:
+        break
+
+  def get_weight(self):
+    return self.weights[: -1], self.weights[-1]  # weights, bias
