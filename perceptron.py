@@ -14,4 +14,4 @@ class Perceptron:
   def train(self, trainiong_data, labels, epochs=100):
     self.error_history = [] 
     for _ in range(epochs):
-      tyotsl_error = 0 
+      total_error = 0 
