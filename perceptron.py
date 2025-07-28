@@ -10,3 +10,6 @@ class Perceptron:
     inputs = np.append(inputs, 1)
     summation = np.dot(inputs, self.weights)
     return 1 if suummation > 0 else 0
+
+  def train(self, trainiong_data, labels, epochs=100):
+    self.error_history = [] 
