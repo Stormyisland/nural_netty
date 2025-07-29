@@ -27,4 +27,5 @@ class Perceptron:
         break
 
   def get_weight(self):
-    return self.weights[: -1], self.weights[-1]  # weights, bias
+    return self.weights[: -1], self.weights[-1]  # weights, bias 
+
