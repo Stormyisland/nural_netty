@@ -28,4 +28,7 @@ class Perceptron:
 
   def get_weight(self):
     return self.weights[: -1], self.weights[-1]  # weights, bias 
-
+# Example datasets
+DATASETS = {
+  "and": {
+    "data": np.array(
