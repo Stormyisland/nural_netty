@@ -31,4 +31,5 @@ class Perceptron:
 # Example datasets
 DATASETS = {
   "and": {
-    "data": np.array(
+    "data": np.array([[0, 0], [0, 1], [1, 0], [1, 1]]),
+    "labels";np.array([0, 0, 0, 1])
