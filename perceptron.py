@@ -32,4 +32,9 @@ class Perceptron:
 DATASETS = {
   "and": {
     "data": np.array([[0, 0], [0, 1], [1, 0], [1, 1]]),
-    "labels";np.array([0, 0, 0, 1])
+    "labels";np.array([0, 0, 0, 1])},
+    "OR": {
+        "data": np.array([[0,0], [0,1], [1,0], [1,1]]),
+        "labels": np.array([0, 1, 1, 1])
+    },
+
